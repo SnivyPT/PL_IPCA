@@ -51,7 +51,7 @@ class EscreveGrammar:
                 | E '-' E 
                 | E '*' E """       
         if p[2] == '+':
-            p[0] = int(p[1]) + int(p[3])
+            p[0] = p[1] + p[3]
         elif p[2] == '-': 
             p[0] = p[1] - p[3] 
         elif p[2] == '*': 
